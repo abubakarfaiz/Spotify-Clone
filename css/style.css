@@ -1,0 +1,267 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  background-color: black;
+  overflow: hidden;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  margin-left: 1rem;
+}
+
+.main {
+  display: flex;
+  height: 100vh;
+  padding: 0.5rem;
+}
+
+.badge {
+  background-color: white;
+  border: none;
+  border-radius: 6.25rem;
+  padding: 0.25rem 1rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+  height: 2rem;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.sidebar {
+  background-color: black;
+  width: 21.25rem;
+  border-radius: 1rem;
+  margin-right: 0.5rem;
+}
+.sidebar .nav {
+  background-color: #121212;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 6.25rem;
+  padding: 0.5rem 0.75rem;
+}
+.sidebar .nav-option {
+  line-height: 2.5rem;
+  opacity: 0.7;
+  padding: 0.5rem 0.75rem;
+}
+.sidebar .nav-option:hover {
+  opacity: 1;
+}
+.sidebar .nav-option i {
+  font-size: 1.25rem;
+}
+.sidebar .nav-option i a {
+  font-size: 1rem;
+}
+.sidebar .library {
+  background-color: #121212;
+  border-radius: 1rem;
+  height: 100%;
+  margin-top: 0.5rem;
+  padding: 0.5rem 0.75rem;
+}
+.sidebar .library .options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sidebar .library .options .lib-option img {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+.sidebar .library .options .icons {
+  font-size: 1.25rem;
+  display: flex;
+}
+.sidebar .library .options .icons i {
+  opacity: 0.7;
+  margin-right: 0.8rem;
+}
+.sidebar .library .options .icons i:hover {
+  opacity: 1;
+}
+.sidebar .library .lib-box .box {
+  height: 8rem;
+  background-color: #232323;
+  border-radius: 0.75rem;
+  margin: 0.75rem 0 1.75rem 0;
+  padding: 0.75rem 1rem;
+}
+.sidebar .library .lib-box .box .box-p1 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.sidebar .library .lib-box .box .box-p2 {
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+.main-content {
+  background-color: #121212;
+  flex: 1;
+  border-radius: 1rem;
+  overflow: auto;
+  padding: 0 1.5rem 0 1.5rem;
+}
+.main-content .sticky-nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  background-color: #121212;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0 1rem 0;
+  z-index: 10;
+}
+.main-content .sticky-nav .nav-icon {
+  margin-left: 0.75rem;
+}
+.main-content .sticky-nav .download-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-content .sticky-nav .download-btn .dark-badge {
+  background-color: black;
+  color: white;
+}
+.main-content .sticky-nav .download-btn .nav-item {
+  margin-right: 1rem;
+}
+@media (max-width: 1000px) {
+  .main-content .sticky-nav .hide {
+    display: none;
+  }
+}
+.main-content .card-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-content .card-container .card {
+  background-color: #232323;
+  width: 9.375rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+  height: 17.5rem;
+}
+.main-content .card-container .card .card1-img {
+  width: 100%;
+  height: 11.25rem;
+  border-radius: 0.5rem;
+}
+.main-content .card-container .card-title {
+  font-weight: 600;
+}
+.main-content .card-container .card-info {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+.main-content .footer {
+  height: 18.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-content .footer .line {
+  width: 90%;
+  height: 40%;
+  border-top: 1px solid white;
+  opacity: 0.4;
+}
+
+.music-player {
+  background-color: black;
+  width: 100%;
+  position: fixed;
+  height: 4.5rem;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.music-player .album {
+  display: flex;
+  width: 25%;
+  align-items: center;
+}
+.music-player .album .first-p1 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.music-player .album .second-p2 {
+  font-size: 0.8rem;
+}
+.music-player .album .alb-para {
+  margin-left: 1rem;
+  line-height: 2px;
+}
+.music-player .album img {
+  height: 50px;
+  width: 50px;
+  margin-left: 1rem;
+  border-radius: 3px;
+}
+.music-player .album .alb-icon {
+  display: flex;
+  align-items: center;
+  padding: 3px;
+  justify-content: space-between;
+  margin-left: 60px;
+}
+.music-player .album .alb-icon .fa-regular {
+  margin-left: 7px;
+}
+.music-player .player {
+  width: 50%;
+}
+.music-player .player .player-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.music-player .player-control-icon {
+  height: 1rem;
+  margin-right: 1.75rem;
+  opacity: 0.7;
+}
+.music-player .player-control-icon:hover {
+  opacity: 1;
+}
+.music-player .player .playback-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.music-player .player .playback-bar .progress-bar {
+  width: 70%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.music-player .player .playback-bar .progress-bar::-webkit-slider-runnable-track {
+  background-color: #ddd;
+  border-radius: 100px;
+  height: 0.2rem;
+}
+.music-player .player .playback-bar .progress-bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+          appearance: none;
+  height: 1rem;
+  width: 1rem;
+  background-color: #1bd760;
+  border-radius: 50%;
+  margin-top: -6px;
+}
+.music-player .control {
+  width: 25%;
+}/*# sourceMappingURL=style.css.map */
